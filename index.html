@@ -3,494 +3,140 @@
 <head>
     <title>Matteo Gabburo</title>
 
-    <!-- Latest compiled and minified Jquery -->
-    <script src=https://code.jquery.com/jquery-3.5.1.min.js></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-    <!-- Fonts -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Major+Mono+Display&family=Montserrat+Subrayada:wght@700&family=Notable&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa&display=swap');
-    </style> 
-    
-
-    <!-- for bubbles -->
-    <link rel="stylesheet" href="http://nicolasgallagher.com/pure-css-speech-bubbles/demo/default.css">
-
     <!-- My css -->
     <style>
 
-        body {background-color: rgb(255, 176, 58);}
-
-        .header {background-color: rgb(44, 86, 100);
-                 color: whitesmoke;
-                 border-bottom: 5px solid #ffffff;
-                 position: fixed;
-                 height: 10vh;
-                 width: 100%;
-                 z-index: 1;
-                }
-
-        .header h1{
-            height: -50px;
-            position: absolute;
-            margin-top: -14px;
-            margin-left: 100px;
-            color: rgb(255, 255, 255);
-            font-family: 'Major Mono Display', monospace;
+        body{
+            background-color: whitesmoke;
         }
 
-        .header h3{
-            height: -50px;
-            position: absolute;
-            margin-top: 48px;
-            margin-left: 101px;
-            color: rgb(44, 86, 100);
-            font-family: 'Major Mono Display', monospace;
+        .mainblock {
+            background-color: rgb(228, 218, 211);
+            margin: 10px;
+            padding: 10px;
+            border-style:ridge;
         }
 
-        .header h3 .tremble{
-            display: inline-block;
+        #title {
+            background-color: whitesmoke;
+            border-style:none;
         }
 
-        @keyframes tremble {
-            0%   {transform: rotate(0deg);}
-            25%  {transform: rotate(10deg);}
-            50%  {transform: rotate(0deg);}
-            75%  {transform: rotate(-10deg);}
-            100%  {transform: rotate(0deg);}
+        #title h3 {
+            margin-top: -30px;
         }
 
-        .tremble:hover{
-            color: #ffffff;
-            animation-name: tremble;
-            animation-duration: 0.08s;
+        .article .title {
+            font-size: large;
+            font-weight: bold;
         }
-
-        .tremble:active{
-            transform: translateY(4px);
-        }
-
-        .headerimg {
-                    position: relative;
-                    top: 0px;
-                    align-self: center;
-                    }
-
-        .speech-bubble {
-            position: relative;
-            background: #e39c15;
-            border-radius: .4em;
-            width: 500px;
-            align-self: center;
-            left: 38%;
-        }
-
-        .speech-bubble:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border: 35px solid transparent;
-            border-top-color: #e39c15;
-            border-bottom: 0;
-            border-left: 0;
-            margin-left: -17.5px;
-            margin-bottom: -35px;
-        }
-
-        #aboutme{
-            padding-top: 15%;
-            vertical-align: center;
-        }
-
-        .main-menu{
-            
-            position: relative;
-            font-family: 'Major Mono Display', monospace;
-            font-size: 30px;
-            margin-left: 700px;
-            padding-top: 13px;
-        }
-
-        .main-menu .entry{
-            display: inline-block;
-        }
-
-        .main-menu .entry a{
-            color: #ffffff;
-        }
-
-        .main-menu .entry a:active{
-            color:blue;
-        }
-
-        .main-content{
-            width: 100%;
-            position: absolute;
-        }
-
-        .img-round {
-            border-radius: 50%;
-            border-width: 6px;
-            border-style: solid;
-            border-color: white;
-        }
-
-        .main-row{
-            padding-top: 80px;
-            padding-left: 50px;
-        }
-
-        .main-row .main-col h1{
-            font-family: 'Major Mono Display', monospace; 
-            font-size: 40px;
-            text-align: left;
-        }
-
-        .main-row .main-col p{
-            font-size: 24px;
-            font-family: 'Comfortaa', cursive;
-        }
-
-        .main-row .main-col img{
-            float: right;
-            width: 25%;
-        }
-
-        .spacer{
-            width:100%;
-            height: 100vh;
-            padding-top: 10vh;
-            display: flex;
-            position: relative;
-        }
-
-        .fromleft{
-            position: relative;
-            margin-right: 40%;
-            overflow: hidden;
-        }
-
-        .fromright{
-            position: relative;
-            margin-left: 40%;
-            overflow: hidden;
-        }
-
-        .education-list{
-            font-size: 24px;
-            font-family: 'Comfortaa', cursive;
-        }
-
-        .education-list ul li{
-            margin-top: 35px;
-            top: 25px;
-        }
-
-        .education-list ul li .period{
-            color: rgb(68, 63, 63);
-            font-size: 20px
-        }
-
-        .education-list ul li .period{
-            color: rgb(68, 63, 63);
-            font-size: 20px
-        }
-
-        .education-list .phd{
-            position: relative;
-            color: rgb(24, 24, 24);
-            left: 20px;
-        }
-
-        .education-list .msc{
-            position: relative;
-            color: rgb(24, 24, 24);
-            left: 40px;
-        }
-
-        .education-list .bsc{
-            position: relative;
-            color: rgb(24, 24, 24);
-            left: 60px;
-        }
-
-        .education-list .ssd{
-            position: relative;
-            color: rgb(24, 24, 24);
-            left: 80px;
-        }
-
-        .badges{
-            width: 15%
-        }
-        
-        .badges p img{
-            width: 50%;
-            height: 50%
-        }
-
-        .project{
-            font-size: 28px;
-            font-family: 'Comfortaa', cursive;
-            width: 80%;
-        }
-        
-        .project .url{
-            width: 5%;
-        }
-
     </style>
 
 </head>
+
 <body>
 
-    <div class="jumbotron header">
-        <div class="text-center">
-            <h1 class="display-4 font-bold">Matteo Gabburo</h1>
-    
-            <h3 class="display-4 font-bold">
-                <div>
-                    <span class="tremble">PhD student</span>
-                    <span>@</span>
-                    <span class="university">University of Trento</span>
-                </div>
-            </h3>
-    
-            <div class="container main-menu">
-                <div class="row">
-    
-                    <div class="col-sm entry">
-                        <a href="#aboutme"><div id="btn-aboutme" class="tremble">About me</div></a>
-                    </div>
-                    /
-                    <div class="col-sm entry">
-                        <a href="#education"><div id="btn-education" class="tremble">Education</div></a>
-                    </div>
-                    /
-                    <div class="col-sm entry">
-                        <a href="#projects"><div id="btn-projects" class="tremble">Projects</div></a>
-                    </div>
-    
-                </div>
-            </div>
-    
+<div class="mainblock" id="title">
+    <h1>
+        Matteo Gabburo
+    </h1>
+    <h3>
+        ~ PhD Student @ University of Trento
+    </h3>
+</div>
+
+<div class="mainblock" id="aboutme">
+    <h2>
+        About me:
+    </h2>
+    <p>
+        Hi, I'm <strong>Matteo</strong>! I'm a PhD student in Information and Communication Technology at the University of Trento.
+    </p>
+    <p>
+        My research interests involve Natural Language Processing, Question Answering and in specific Generative models for Question Answering. Currently I'm focusing my interest in new automatic metrics to evaluate Generative QA models.
+    </p>
+</div>
+
+<div class="mainblock" id="education">
+    <h2>
+        Education:
+    </h2>
+    <p>
+        <div class="education-list">
+        <ul>
+            <li class="phd">
+                <span class="period"> November 2020 - Present</span><br>
+                <span class="degree"> &#8594; <strong>PhD student </strong><it>@ University of Trento (Italy)</it></span><br>
+            </li>
+            <li class="msc">
+                <span class="period"> September 2016 - March 2019</span><br>
+                <span class="degree"> &#8594; <strong>MSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
+            </li>
+            <li class="bsc">
+                <span class="period"> September 2012 - March 2016</span><br>
+                <span class="degree"> &#8594; <strong>BSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
+            </li>
+            <li class="ssd">
+                <span class="period"> September 2007 - June 2012</span><br>
+                <span class="degree"> &#8594; <strong>Secondary School Diploma in IT </strong><it></it>@ ITIS Fermi of Bassano del Grappa (Italy)</it></span><br>
+            </li>
+        </ul>
         </div>
-    </div>
+    </p>
+</div>
 
 
-    <div class="container main-content">
-
-        <!-- about me -->
-        <div class="fromleft">
-            <div class="spacer", id="aboutme">
-                
-                <div class="row main-row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-lg-11 main-col">
-                        <h1>About me</h1>
-                        <img class="tremble img-round" src="images/profile.jpg" alt="Me">
-                        <p>
-                            Hi, I'm <strong>Matteo</strong>! I'm a PhD student in Information and Communication Technology at the University of Trento.
-                        </p>
-                        <p>
-                            At the moment I'm working on deep neural models applied to the Natural Language domain. In particular, I am focusing on <strong>Transformer</strong> models and new approaches to make them even more efficient! 
-                        </p>
-                    </div>
-                    <div class="col-sm-10  main-col">
-                        <div class="badges">
-                            <p class="tremble">
-                                <a href="https://github.com/matteogabburo"><strong>Github</strong> <img src="images/GitHub-Mark-120px-plus.png" alt="GitHub"></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+<div class="mainblock" id="experience">
+    <h2>
+        Experience:
+    </h2>    
+    <div class="experiences-list">
+        <ul>
+            <li class="jobposition">
+                <span class="period"> February 2022 - Present</span><br>
+                <span class="jobtitle"> &#8594; <strong>Applied Scientist Intern @ Amazon Alexa </strong><it> Los Angeles (USA)</it></span><br>
+            </li>
+            <li class="jobposition">
+                <span class="period"> April 2021 - October 2021</span><br>
+                <span class="jobtitle"> &#8594; <strong>Applied Scientist Intern @ Amazon Alexa </strong><it> Los Angeles (USA)</it></span><br>
+            </li>
+            <li class="jobposition">
+                <span class="period"> July 2019 - July 2020</span><br>
+                <span class="jobtitle"> &#8594; <strong>Borsa di ricerca post laurea </strong><it></it>@ University of Trento (Italy)</it></span><br>
+            </li>
+        </ul>
         </div>
+    </p>
+</div>
 
-        <!-- Education -->
-        <div class="fromright">
-            <div class="spacer" id="education">
 
-                <div class="row main-row">    
-                    <div class="col-sm-2"></div>
-                    <div class="col-lg-11 main-col">
+<div class="mainblock" id="publications">
+    <h2>
+        Publications:
+    </h2>    
+    <ul>
+        <li class="article">
+            <span class="title"> Effective Pre-Training Objectives for Transformer-based Autoencoders </span><br>
+            <span class="authors"> Luca Di Liello, Matteo Gabburo, Alessandro Moschitti </span><br>
+            <span class="venue">  &#8594; <strong>EMNLP22, findings, SustainNLP Workshop</strong> </span><br>
+            <span class="resource"> <a href="https://arxiv.org/pdf/2210.13536.pdf">PDF</a> </span><br>
+            <p class="abstract">
+            In this paper, we study trade-offs between efficiency, cost and accuracy when pre-training Transformer encoders with different pre-training objectives. For this purpose, we analyze features of common objectives and combine them to create new effective pre-training approaches. Specifically, we designed light token generators based on a straightforward statistical approach, which can replace ELECTRA computationally heavy generators, thus highly reducing cost. Our experiments also show that (i) there are more efficient alternatives to BERT's MLM, and (ii) it is possible to efficiently pre-train Transformer-based models using lighter generators without a significant drop in performance. 
+            </p>
+        </li>
 
-                        <h1>Education</h1>
-                        <p>
-                            <div class="education-list">
-                            <ul>
-                                <li class="phd">
-                                    <span class="period"> November 2020 - Present</span><br>
-                                    <span class="degree"> &#8594; <strong>PhD student </strong><it>@ University of Trento (Italy)</it></span><br>
-                                </li>
-                                <li class="msc">
-                                    <span class="period"> September 2016 - March 2019</span><br>
-                                    <span class="degree"> &#8594; <strong>MSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
-                                </li>
-                                <li class="bsc">
-                                    <span class="period"> September 2012 - March 2016</span><br>
-                                    <span class="degree"> &#8594; <strong>BSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
-                                </li>
-                                <li class="ssd">
-                                    <span class="period"> September 2007 - June 2012</span><br>
-                                    <span class="degree"> &#8594; <strong>Secondary School Diploma in IT </strong><it></it>@ ITIS Fermi of Bassano del Grappa (Italy)</it></span><br>
-                                </li>
-                            </ul>
-                            </div>
-                        </p>
-                    </div>
-                    <div class="col-sm-10  main-col"></div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Projects -->
-
-        <div class="fromleft">
-            <div class="spacer" id="projects">
-        
-
-                <div class="row main-row">    
-                    <div class="col-sm-2"></div>
-                    <div class="col-lg-11 main-col">
-
-                        <h1>Projects</h1>
-                        <p>
-                            Here you can find a couple of projects on which I worked, or I'm working.
-                        </p>
-                        <div class="project-list">
-                        <ul>
-                            <!--<li class="project">
-                                <span class="title">Pyovra</span><br>
-                                <span class="url"><a href="https://github.com/matteogabburo/pyovra-git"><img class="tremble" src="images/GitHub-Mark-120px-plus.png" alt="Pyovra"></a></span><br>
-                                <span class="description"> &#8594; blalba</span><br>
-                            </li>-->
-                            <li class="project">
-                                <p>This section is under construction!</p>
-                                <p>Give a look at <a href="https://github.com/matteogabburo"><div class="tremble">the pinned projects</div></a></p>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-10  main-col">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-    </div>
-    
-    <!--
-    <div class="text-center">
-        <img src="https://live.staticflickr.com/7284/28171985695_689ab3ce7d_h.jpg" class="rounded" alt="cv image">
-    </div>
-    -->
+        <li class="article">
+            <span class="title"> Knowledge Transfer from Answer Ranking to Answer Generation </span><br>
+            <span class="authors"> Matteo Gabburo, Rik Koncel-Kedziorski, Siddhant Garg, Luca Soldaini, Alessandro Moschitti </span><br>
+            <span class="venue">  &#8594; <strong>EMNLP22, main conference</strong> </span><br>
+            <span class="resource"> <a href="https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.645.pdf">PDF</a> </span><br>
+            <p class="abstract">
+                Recent studies show that Question Answering (QA) based on Answer Sentence Selection (AS2) can be improved by generating an improved answer from the top-k ranked answer sentences (termed GenQA). This allows for synthesizing the information from multiple candidates into a concise, natural-sounding answer. However, creating large-scale supervised training data for GenQA models is very challenging. In this paper, we propose to train a GenQA model by transferring knowledge from a trained AS2 model, to overcome the aforementioned issue. First, we use an AS2 model to produce a ranking over answer candidates for a set of questions. Then, we use the top ranked candidate as the generation target, and the next k top ranked candidates as context for training a GenQA model. We also propose to use the AS2 model prediction scores for loss weighting and score-conditioned input/output shaping, to aid the knowledge transfer. Our evaluation on three public and one large industrial datasets demonstrates the superiority of our approach over the AS2 baseline, and GenQA trained using supervised data.    
+            </p>
+        </li>
+    </ul>
+</div>
 
 </body>
-
-<!-- Scrolls -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('.fromleft', {
-        duration: 1.0,
-        scaleX: 1.0,
-        scaleY: 1.0,
-        xPercent: 20,
-        scrollTrigger: {
-
-                toggleActions: "play reverse play reverse",
-                trigger: '.fromleft',
-                markers: false,
-        }
-    });
-</script>
-
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('.fromright', {
-        duration: 1.0,
-        scaleX: 1.0,
-        scaleY: 1.0,
-        xPercent: -20,
-        scrollTrigger: {
-
-                toggleActions: "play reverse play reverse",
-                trigger: '.fromright',
-                markers: false,
-        }
-    });
-</script>
-
-<!-- Mangage the about-me menu button -->
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('#btn-aboutme', {
-        color: "#e39c15",
-        duration: 0.2,
-        scaleX: 1.2,
-        scaleY: 1.2,
-        y: -10,
-        scrollTrigger: {
-
-                toggleActions: "play reverse play reverse",
-                trigger: '#aboutme',
-                markers: false,
-        }
-    });
-</script>
-
-<!-- Mangage the Education menu button -->
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('#btn-education', {
-        color: "#e39c15",
-        duration: 0.2,
-        scaleX: 1.2,
-        scaleY: 1.2,
-        y: -10,
-        scrollTrigger: {
-
-                toggleActions: "play reverse play reverse",
-                trigger: '#education',
-                markers: false,        
-        }
-    });
-</script>
-
-<!-- Mangage the Projects menu button -->
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to('#btn-projects', {
-        color: "#e39c15",
-        duration: 0.2,
-        scaleX: 1.2,
-        scaleY: 1.2,
-        y: -10,
-        scrollTrigger: {
-
-                toggleActions: "play reverse play reverse",
-                trigger: '#projects',
-                markers: false,        
-        }
-    });
-</script>
 
 </html>
