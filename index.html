@@ -1,185 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matteo Gabburo - Founder & CTO at Aithlas, PhD in NLP and Question Answering from University of Trento.">
     <title>Matteo Gabburo</title>
-
-    <!-- My css -->
-    <style>
-
-        body{
-            background-color: whitesmoke;
-        }
-
-        .mainblock {
-            background-color: rgb(228, 218, 211);
-            margin: 10px;
-            padding: 10px;
-            border-style:ridge;
-        }
-
-        #title {
-            background-color: whitesmoke;
-            border-style:none;
-        }
-
-        #title h3 {
-            margin-top: -30px;
-        }
-
-        .article .title {
-            font-size: large;
-            font-weight: bold;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<div class="mainblock" id="title">
-    <h1>
-        Matteo Gabburo
-    </h1>
-    <h3>
-        ~ PhD Student @ University of Trento
-    </h3>
-</div>
+<header>
+    <h1>Matteo Gabburo</h1>
+    <p class="subtitle">CTO @ Aithlas &middot; PhD in Information and Communication Technology</p>
+    <div class="contact-links">
+        <a href="mailto:matteo.gabburo@aithlas.com">matteo.gabburo@aithlas.com</a>
+        <a href="https://github.com/matteogabburo">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=xK3FEV0AAAAJ">Google Scholar</a>
+        <a href="https://www.semanticscholar.org/author/Matteo-Gabburo/2079392752">Semantic Scholar</a>
+        <a href="https://www.linkedin.com/in/matteo-gabburo/">LinkedIn</a>
+    </div>
+</header>
 
-<div class="mainblock" id="aboutme">
-    <h2>
-        About me:
-    </h2>
-    <p>
-        Hi, I'm <strong>Matteo</strong>! I'm a PhD student in Information and Communication Technology at the University of Trento.
-    </p>
-    <p>
-        My research interests involve Natural Language Processing, Question Answering and in specific Generative models for Question Answering. Currently I'm focusing my interest in new automatic metrics to evaluate Generative QA models.
-    </p>
-    <h2>
-        Contacts:
-    </h2>
+<nav>
     <ul>
-        <li>Mail: matteo.gabburo[at]unitn[dot]com</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#reviewing">Reviewing</a></li>
+        <li><a href="#skills">Skills</a></li>
     </ul>
+</nav>
 
-</div>
+<main>
 
-<div class="mainblock" id="education">
-    <h2>
-        Education:
-    </h2>
-    <p>
-        <div class="education-list">
-        <ul>
-            <li class="phd">
-                <span class="period"> November 2020 - Present</span><br>
-                <span class="degree"> &#8594; <strong>PhD student </strong><it>@ University of Trento (Italy)</it></span><br>
-            </li>
-            <li class="msc">
-                <span class="period"> September 2016 - March 2019</span><br>
-                <span class="degree"> &#8594; <strong>MSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
-            </li>
-            <li class="bsc">
-                <span class="period"> September 2012 - March 2016</span><br>
-                <span class="degree"> &#8594; <strong>BSc student </strong><it></it>@ University of Trento (Italy)</it></span><br>
-            </li>
-            <li class="ssd">
-                <span class="period"> September 2007 - June 2012</span><br>
-                <span class="degree"> &#8594; <strong>Secondary School Diploma in IT </strong><it></it>@ ITIS Fermi of Bassano del Grappa (Italy)</it></span><br>
-            </li>
-        </ul>
+    <!-- About -->
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            I'm <strong>Matteo Gabburo</strong>, CTO of <strong><a href="https://www.aithlas.com/">Aithlas</a></strong>, where I lead the design and deployment of AI-driven solutions for industrial clients. I hold a PhD in Information and Communication Technology from the University of Trento, where my research focused on <strong>loss and reward functions for Generative Question Answering systems</strong> under the supervision of Prof. Alessandro Moschitti.
+        </p>
+        <p>
+            My research spans training generative QA models with weak supervision techniques, developing automatic evaluation systems for QA, and designing efficient pre-training tasks for Transformer models.
+        </p>
+        <div class="research-interests">
+            <span>NLP</span>
+            <span>Question Answering</span>
+            <span>Generative QA</span>
+            <span>Automatic Evaluation</span>
+            <span>Transformers</span>
+            <span>Language Models</span>
+            <span>Retrieval-Augmented Generation</span>
         </div>
-    </p>
-</div>
+    </section>
 
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Experience</h2>
 
-<div class="mainblock" id="experience">
-    <h2>
-        Experience:
-    </h2>    
-    <div class="experiences-list">
-        <ul>
-            <li class="jobposition">
-                <span class="period"> July 2023 - November 2023</span><br>
-                <span class="jobtitle"> &#8594; <strong>Applied Scientist Intern @ Amazon Alexa </strong><it> Santa Barbara (USA)</it></span><br>
-            </li>
-            <li class="jobposition">
-                <span class="period"> February 2022 - February 2022</span><br>
-                <span class="jobtitle"> &#8594; <strong>Applied Scientist Intern @ Amazon Alexa </strong><it> Los Angeles (USA)</it></span><br>
-            </li>
-            <li class="jobposition">
-                <span class="period"> April 2021 - October 2021</span><br>
-                <span class="jobtitle"> &#8594; <strong>Applied Scientist Intern @ Amazon Alexa </strong><it> Los Angeles (USA)</it></span><br>
-            </li>
-            <li class="jobposition">
-                <span class="period"> July 2019 - July 2020</span><br>
-                <span class="jobtitle"> &#8594; <strong>Borsa di ricerca post laurea </strong><it></it>@ University of Trento (Italy)</it></span><br>
-            </li>
-        </ul>
+        <div class="exp-entry">
+            <img src="images/logos/aithlas.jpeg" alt="Aithlas" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Chief Technology Officer</div>
+                <div class="org"><a href="https://www.aithlas.com/">Aithlas</a> · <a href="https://www.linkedin.com/company/aithlas/">LinkedIn</a></div>
+                <div class="period">Jun 2025 &ndash; Present</div>
+                <div class="location">Vicenza, Italy · Remote</div>
+                <div class="description">Leading the design and deployment of AI-driven solutions for industrial clients across B2B and B2C contexts. Responsible for end-to-end technical strategy, model development, and production integration of machine learning systems.</div>
+            </div>
         </div>
-    </p>
-</div>
 
+        <div class="exp-entry">
+            <img src="images/logos/amazon.jpeg" alt="Amazon" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Applied Scientist</div>
+                <div class="org">Amazon</div>
+                <div class="period">Oct 2024 &ndash; Mar 2025 · 6 mos</div>
+                <div class="location">Berlin, Germany</div>
+                <div class="description">Context Selection Techniques for Efficient Retrieval-Augmented Generation. Proposed a lightweight LLM-based content selection method achieving up to 98% reduction in input length and 5.2% accuracy improvement across five QA benchmarks.</div>
+            </div>
+        </div>
 
-<div class="mainblock" id="publications">
-    <h2>
-        Publications:
-    </h2>    
-    <ul>
+        <div class="exp-entry">
+            <img src="images/logos/amazon.jpeg" alt="Amazon" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Applied Scientist</div>
+                <div class="org">Amazon</div>
+                <div class="period">Jul 2023 &ndash; Oct 2023 · 4 mos</div>
+                <div class="location">Santa Barbara, CA, USA</div>
+                <div class="description">Question Decomposition for Retrieval-Augmented Answer Generation. Analyzed benefits and limitations of question decomposition strategies in large-scale RAG systems.</div>
+            </div>
+        </div>
 
-        <li class="article">
-            <span class="title"> Measuring Retrieval Complexity in Question Answering Systems </span><br>
-            <span class="authors"> Matteo Gabburo, Nicolaas Paul Jedema, Siddhant Garg, Leonardo F. R. Ribeiro, Alessandro Moschitti </span><br>
-            <span class="venue">  &#8594; <strong>ACL2024, findings</strong> </span><br>
-            <span class="resource"> <a href="https://arxiv.org/abs/2406.03592">PDF</a> </span><br>
-            <p class="abstract">
-                In this paper, we investigate which questions are challenging for retrieval-based Question Answering (QA). We (i) propose retrieval complexity (RC), a novel metric conditioned on the completeness of retrieved documents, which measures the difficulty of answering questions, and (ii) propose an unsupervised pipeline to measure RC given an arbitrary retrieval system. Our proposed pipeline measures RC more accurately than alternative estimators, including LLMs, on six challenging QA benchmarks. Further investigation reveals that RC scores strongly correlate with both QA performance and expert judgment across five of the six studied benchmarks, indicating that RC is an effective measure of question difficulty. Subsequent categorization of high-RC questions shows that they span a broad set of question shapes, including multi-hop, compositional, and temporal QA, indicating that RC scores can categorize a new subset of complex questions. Our system can also have a major impact on retrieval-based systems by helping to identify more challenging questions on existing datasets. 
-            </p>
-        </li>
+        <div class="exp-entry">
+            <img src="images/logos/amazon.jpeg" alt="Amazon" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Applied Scientist</div>
+                <div class="org">Amazon</div>
+                <div class="period">Feb 2022 &ndash; Feb 2023 · 1 yr 1 mo</div>
+                <div class="location">Los Angeles, CA, USA</div>
+                <div class="description">Automatic Evaluation Metrics for Seq2Seq Answer Generation Models. Developed novel automatic evaluation methodologies for QA systems and enhanced training strategies for generative QA models.</div>
+            </div>
+        </div>
 
-        <li class="article">
-            <span class="title"> SQUARE: Automatic Question Answering Evaluation using Multiple Positive and Negative References </span><br>
-            <span class="authors"> Matteo Gabburo, Siddhant Garg, Rik Koncel Kedziorski, Alessandro Moschitti </span><br>
-            <span class="venue">  &#8594; <strong>IJCNLP-AACL2023, main conference</strong> </span><br>
-            <span class="resource"> <a href="https://arxiv.org/pdf/2309.12250.pdf">PDF</a> </span><br>
-            <p class="abstract">
-                Evaluation of QA systems is very challenging and expensive, with the most reliable approach being human annotations of correctness of answers for questions. Recent works (AVA, BEM) have shown that transformer LM encoder based similarity metrics transfer well for QA evaluation, but they are limited by the usage of a single correct reference answer. We propose a new evaluation metric: SQuArE (Sentence-level QUestion AnsweRing Evaluation), using multiple reference answers (combining multiple correct and incorrect references) for sentence-form QA. We evaluate SQuArE on both sentence-level extractive (Answer Selection) and generative (GenQA) QA systems, across multiple academic and industrial datasets, and show that it outperforms previous baselines and obtains the highest correlation with human annotations.  
-            </p>
-        </li>
+        <div class="exp-entry">
+            <img src="images/logos/amazon.jpeg" alt="Amazon" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Applied Scientist</div>
+                <div class="org">Amazon</div>
+                <div class="period">Apr 2021 &ndash; Oct 2021 · 7 mos</div>
+                <div class="location">Los Angeles, CA, USA · Remote</div>
+                <div class="description">Knowledge Transfer from Answer Selection to Text-to-Text Models. Designed novel knowledge distillation techniques to transfer supervision from AS2 models to seq2seq architectures, published at EMNLP 2022.</div>
+            </div>
+        </div>
 
-        <li class="article">
-            <span class="title"> Learning Answer Generation using Supervision from Automatic Question Answering Evaluators </span><br>
-            <span class="authors"> Matteo Gabburo, Siddhant Garg, Rik Koncel Kedziorski, Alessandro Moschitti </span><br>
-            <span class="venue">  &#8594; <strong>ACL2023, main conference</strong> </span><br>
-            <span class="resource"> <a href="https://aclanthology.org/2023.acl-long.467.pdf">PDF</a> </span><br>
-            <p class="abstract">
-                Recent studies show that sentence-level extractive QA, i.e., based on Answer Sentence Selection (AS2), is outperformed by Generation-based QA (GenQA) models, which generate answers using the top-k answer sentences ranked by AS2 models (a la retrieval-augmented generation style). In this paper, we propose a novel training paradigm for GenQA using supervision from automatic QA evaluation models (GAVA). Specifically, we propose three strategies to transfer knowledge from these QA evaluation models to a GenQA model: (i) augmenting training data with answers generated by the GenQA model and labelled by GAVA (either statically, before training, or (ii) dynamically, at every training epoch); and (iii) using the GAVAscore for weighting the generator loss during the learning of the GenQA model. We evaluate our proposed methods on two academic and one industrial dataset, obtaining a significant improvement in answering accuracy over the previous state of the art.             
-            </p>
-        </li>
+        <div class="exp-entry">
+            <img src="images/logos/unitn.jpeg" alt="University of Trento" class="exp-logo">
+            <div class="exp-content">
+                <div class="role">Early Stage Researcher</div>
+                <div class="org">University of Trento</div>
+                <div class="period">Mar 2019 &ndash; Sep 2020 · 1 yr 7 mos</div>
+                <div class="location">Trento, Italy</div>
+                <div class="description">Transformer-Based Models for Program Completion. Leveraged Transformer architectures to design and evaluate multilingual models for source code, in collaboration with Orange.</div>
+            </div>
+        </div>
+    </section>
 
-        <li class="article">
-            <span class="title"> Knowledge Transfer from Answer Ranking to Answer Generation </span><br>
-            <span class="authors"> Matteo Gabburo, Rik Koncel-Kedziorski, Siddhant Garg, Luca Soldaini, Alessandro Moschitti </span><br>
-            <span class="venue">  &#8594; <strong>EMNLP22, main conference</strong> </span><br>
-            <span class="resource"> <a href="https://aclanthology.org/2022.emnlp-main.645.pdf">PDF</a> </span><br>
-            <p class="abstract">
-                Recent studies show that Question Answering (QA) based on Answer Sentence Selection (AS2) can be improved by generating an improved answer from the top-k ranked answer sentences (termed GenQA). This allows for synthesizing the information from multiple candidates into a concise, natural-sounding answer. However, creating large-scale supervised training data for GenQA models is very challenging. In this paper, we propose to train a GenQA model by transferring knowledge from a trained AS2 model, to overcome the aforementioned issue. First, we use an AS2 model to produce a ranking over answer candidates for a set of questions. Then, we use the top ranked candidate as the generation target, and the next k top ranked candidates as context for training a GenQA model. We also propose to use the AS2 model prediction scores for loss weighting and score-conditioned input/output shaping, to aid the knowledge transfer. Our evaluation on three public and one large industrial datasets demonstrates the superiority of our approach over the AS2 baseline, and GenQA trained using supervised data.    
-            </p>
-        </li>
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
 
-        <li class="article">
-            <span class="title"> Effective Pre-Training Objectives for Transformer-based Autoencoders </span><br>
-            <span class="authors"> Luca Di Liello, Matteo Gabburo, Alessandro Moschitti </span><br>
-            <span class="venue">  &#8594; <strong>EMNLP22, findings, SustainNLP Workshop</strong> </span><br>
-            <span class="resource"> <a href="https://aclanthology.org/2022.findings-emnlp.405.pdf">PDF</a> </span><br>
-            <p class="abstract">
-            In this paper, we study trade-offs between efficiency, cost and accuracy when pre-training Transformer encoders with different pre-training objectives. For this purpose, we analyze features of common objectives and combine them to create new effective pre-training approaches. Specifically, we designed light token generators based on a straightforward statistical approach, which can replace ELECTRA computationally heavy generators, thus highly reducing cost. Our experiments also show that (i) there are more efficient alternatives to BERT's MLM, and (ii) it is possible to efficiently pre-train Transformer-based models using lighter generators without a significant drop in performance. 
-            </p>
-        </li>
+        <div class="timeline-entry">
+            <div class="period">November 2020 &ndash; March 2025</div>
+            <div class="role">PhD in Information and Communication Technology</div>
+            <div class="org">University of Trento</div>
+            <div class="location">Trento, Italy</div>
+            <div class="description">Advisor: Alessandro Moschitti. Thesis: &ldquo;Loss and Reward Functions for Generative Question Answering Systems&rdquo;</div>
+        </div>
 
-    </ul>
-</div>
+        <div class="timeline-entry">
+            <div class="period">September 2016 &ndash; March 2019</div>
+            <div class="role">MSc in Computer Science</div>
+            <div class="org">University of Trento</div>
+            <div class="location">Trento, Italy</div>
+            <div class="description">Advisor: Andrea Passerini. Thesis: &ldquo;Learning Activation Functions for Type Extension Trees&rdquo;</div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="period">September 2012 &ndash; March 2016</div>
+            <div class="role">BSc in Computer Science</div>
+            <div class="org">University of Trento</div>
+            <div class="location">Trento, Italy</div>
+        </div>
+
+        <div class="timeline-entry">
+            <div class="period">September 2007 &ndash; June 2012</div>
+            <div class="role">Secondary School Diploma in IT</div>
+            <div class="org">ITIS Enrico Fermi</div>
+            <div class="location">Bassano del Grappa, Italy</div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="publication">
+            <div class="pub-title">Loss and Reward Functions for Generative Question Answering Systems</div>
+            <div class="pub-authors">Matteo Gabburo</div>
+            <div class="pub-venue">PhD Dissertation, University of Trento, 2025</div>
+            <div class="pub-links">
+                <a href="https://iris.unitn.it/retrieve/a44b65d5-53fa-4918-99d9-8af0e6d30277/phd_unitn_gabburo_matteo.pdf">PDF</a>
+                <a href="https://iris.unitn.it/handle/11572/450810">IRIS</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Datasets for Multilingual Answer Sentence Selection</div>
+            <div class="pub-authors">Matteo Gabburo, Stefano Campese, Federico Agostini, Alessandro Moschitti</div>
+            <div class="pub-venue">EMNLP 2024, Findings</div>
+            <div class="pub-links">
+                <a href="https://aclanthology.org/2024.findings-emnlp.527/">ACL Anthology</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Measuring Retrieval Complexity in Question Answering Systems</div>
+            <div class="pub-authors">Matteo Gabburo, Nicolaas Paul Jedema, Siddhant Garg, Leonardo F. R. Ribeiro, Alessandro Moschitti</div>
+            <div class="pub-venue">ACL 2024, Findings</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2406.03592">PDF</a>
+                <a href="https://aclanthology.org/2024.findings-acl.870/">ACL Anthology</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">SQUARE: Automatic Question Answering Evaluation using Multiple Positive and Negative References</div>
+            <div class="pub-authors">Matteo Gabburo, Siddhant Garg, Rik Koncel-Kedziorski, Alessandro Moschitti</div>
+            <div class="pub-venue">IJCNLP-AACL 2023, Main Conference</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2309.12250.pdf">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Learning Answer Generation using Supervision from Automatic Question Answering Evaluators</div>
+            <div class="pub-authors">Matteo Gabburo, Siddhant Garg, Rik Koncel-Kedziorski, Alessandro Moschitti</div>
+            <div class="pub-venue">ACL 2023, Main Conference</div>
+            <div class="pub-links">
+                <a href="https://aclanthology.org/2023.acl-long.467.pdf">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Knowledge Transfer from Answer Ranking to Answer Generation</div>
+            <div class="pub-authors">Matteo Gabburo, Rik Koncel-Kedziorski, Siddhant Garg, Luca Soldaini, Alessandro Moschitti</div>
+            <div class="pub-venue">EMNLP 2022, Main Conference</div>
+            <div class="pub-links">
+                <a href="https://aclanthology.org/2022.emnlp-main.645.pdf">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Effective Pretraining Objectives for Transformer-based Autoencoders</div>
+            <div class="pub-authors">Luca Di Liello, Matteo Gabburo, Alessandro Moschitti</div>
+            <div class="pub-venue">EMNLP 2022, Findings</div>
+            <div class="pub-links">
+                <a href="https://aclanthology.org/2022.findings-emnlp.405.pdf">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Efficient Pre-training Objectives for Transformers</div>
+            <div class="pub-authors">Luca Di Liello, Matteo Gabburo, Alessandro Moschitti</div>
+            <div class="pub-venue">arXiv preprint, 2021</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2104.09694">PDF</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Evaluating Retrieval System for Language Model Processing</div>
+            <div class="pub-authors">Nicolaas P. Jedema, Leonardo F. R. Ribeiro, Alessandro Moschitti, Matteo Gabburo, Siddhant Garg</div>
+            <div class="pub-venue">US Patent 12,579,174, 2025</div>
+        </div>
+    </section>
+
+    <!-- Reviewing -->
+    <section id="reviewing">
+        <h2>Peer Reviewing</h2>
+
+        <h3 style="font-size: 1rem; color: #2c3e50; margin-bottom: 0.8rem;">Conferences</h3>
+        <div class="reviewer-list">
+            <div class="year-entry"><strong>2025</strong> <span>ARR 2025</span></div>
+            <div class="year-entry"><strong>2024</strong> <span>ACL, EACL</span></div>
+            <div class="year-entry"><strong>2023</strong> <span>IJCNLP-AACL, EMNLP, ECMLPKDD, ACL</span></div>
+            <div class="year-entry"><strong>2022</strong> <span>WSDM, ICML, EMNLP, NAACL, KDD</span></div>
+            <div class="year-entry"><strong>2021</strong> <span>EMNLP, ACL-IJCNLP</span></div>
+            <div class="year-entry"><strong>2020</strong> <span>CLIC-IT</span></div>
+        </div>
+
+        <h3 style="font-size: 1rem; color: #2c3e50; margin: 1rem 0 0.5rem;">Journals</h3>
+        <p style="font-size: 0.9rem; color: #666;">
+            Journal of Artificial Intelligence Research (JAIR) &middot;
+            ACM Computing Surveys (CSUR) &middot;
+            Journal on Data Semantics (JoDS) &middot;
+            The Computer Journal (COMJ)
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li><strong>Proficient:</strong> Python, Java, C, C#, SQL, NoSQL</li>
+                    <li><strong>Familiar:</strong> C++, JavaScript, OCaml, x86 Assembly</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>ML Frameworks</h3>
+                <ul>
+                    <li><strong>Proficient:</strong> PyTorch, PyTorch Lightning</li>
+                    <li><strong>Familiar:</strong> TensorFlow v1/v2, Theano</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <ul>
+                    <li><strong>Italian:</strong> Native</li>
+                    <li><strong>English:</strong> Advanced</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Research</h3>
+                <ul>
+                    <li>NLP, Question Answering, RAG</li>
+                    <li>Seq2Seq, Transformers, LLMs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="social-links">
+        <a href="https://github.com/matteogabburo">GitHub</a>
+        <a href="https://www.linkedin.com/in/matteo-gabburo/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=xK3FEV0AAAAJ">Google Scholar</a>
+    </div>
+    <p>&copy; 2025 Matteo Gabburo</p>
+</footer>
 
 </body>
-
 </html>
